@@ -1,0 +1,65 @@
+
+{
+	"animal": {
+		"diets": ["carnivore", "herbivore"],
+		"sizes": {
+			"small": 1,
+			"medium": 3,
+			"large": 5
+		}
+	},
+	"safety": {
+		"carnivoreEatsEqualOrSmaller": true,
+		"preventAnyAnimalBeingEaten": true
+	},
+	"wagon": {
+		"maxPoints": 10,
+		"avoidSingleAnimalWagonUnlessNecessary": true,
+		"experimental": {
+			"maxWagons": 4,
+			"hasSeparators": true,
+			"allowed": {
+				"maxCarnivores": 2,
+				"maxHerbivores": 1,
+				"carnivoreSizesAllowed": ["small", "medium"],
+				"herbivoreSizesAllowed": ["small", "medium"],
+				"allowedCombos": [
+					{
+						"carnivores": 2,
+						"herbivores": 0
+					},
+					{
+						"carnivores": 1,
+						"herbivores": 1
+					}
+				]
+			}
+		}
+	},
+	"animals": [
+		{ "id": "H-S-01", "name": "Rabbit", "diet": "herbivore", "size": "small", "points": 1 },
+		{ "id": "H-S-02", "name": "Duck", "diet": "herbivore", "size": "small", "points": 1 },
+		{ "id": "H-S-03", "name": "Goat", "diet": "herbivore", "size": "small", "points": 1 },
+
+		{ "id": "H-M-01", "name": "Deer", "diet": "herbivore", "size": "medium", "points": 3 },
+		{ "id": "H-M-02", "name": "Sheep", "diet": "herbivore", "size": "medium", "points": 3 },
+		{ "id": "H-M-03", "name": "Kangaroo", "diet": "herbivore", "size": "medium", "points": 3 },
+
+		{ "id": "H-L-01", "name": "Zebra", "diet": "herbivore", "size": "large", "points": 5 },
+		{ "id": "H-L-02", "name": "Horse", "diet": "herbivore", "size": "large", "points": 5 },
+
+		{ "id": "C-S-01", "name": "Ferret", "diet": "carnivore", "size": "small", "points": 1 },
+		{ "id": "C-S-02", "name": "Cat", "diet": "carnivore", "size": "small", "points": 1 },
+
+		{ "id": "C-M-01", "name": "Fox", "diet": "carnivore", "size": "medium", "points": 3 },
+		{ "id": "C-M-02", "name": "Wolf", "diet": "carnivore", "size": "medium", "points": 3 },
+
+		{ "id": "C-L-01", "name": "Lion", "diet": "carnivore", "size": "large", "points": 5 },
+		{ "id": "C-L-02", "name": "Tiger", "diet": "carnivore", "size": "large", "points": 5 },
+
+		{ "id": "MIX-01", "name": "TestCombo_1MediumCarnivore_1MediumHerbivore", "diet": "mixed", "members": [
+			{ "diet": "carnivore", "size": "medium", "points": 3 },
+			{ "diet": "herbivore", "size": "medium", "points": 3 }
+		] }
+	]
+}
