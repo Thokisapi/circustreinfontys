@@ -54,11 +54,7 @@
 		{ "id": "Car-Med-01", "name": "Fox", "diet": "carnivore", "size": "medium", "points": 3 },
 		{ "id": "Car-Med-02", "name": "Wolf", "diet": "carnivore", "size": "medium", "points": 3 },
 		{ "id": "Car-Lar-01", "name": "Lion", "diet": "carnivore", "size": "large", "points": 5 },
-		{ "id": "Car-Lar-02", "name": "Tiger", "diet": "carnivore", "size": "large", "points": 5 },
+		{ "id": "Car-Lar-02", "name": "Tiger", "diet": "carnivore", "size": "large", "points": 5 }
 
-		{ "id": "MIX-01", "name": "TestCombo_1MediumCarnivore_1MediumHerbivore", "diet": "mixed", "members": [
-			{ "diet": "carnivore", "size": "medium", "points": 3 },
-			{ "diet": "herbivore", "size": "medium", "points": 3 }
-		] }
 	]
 }
